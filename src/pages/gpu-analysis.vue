@@ -271,7 +271,7 @@ const osWarnings = computed(() => {
     </div>
 
     <!-- 结论 -->
-    <Alert :variant="verdict.level === 'ok' ? 'default' : verdict.level">
+    <Alert :variant="verdict.level === 'error' ? 'destructive' : 'default'">
       <AlertTitle>{{ verdict.title }}</AlertTitle>
       <AlertDescription>{{ verdict.text }}</AlertDescription>
     </Alert>
