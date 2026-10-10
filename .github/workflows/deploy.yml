@@ -37,7 +37,13 @@ jobs:
           GITHUB_PAGES: 'true'
           GITHUB_REPOSITORY: ${{ github.repository }}
 
-      - uses: actions/configure-pages@v5
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          # 站点未创建时自动开启 Pages，
+          # 避免因仓库从未初始化过 Pages 而报 404。
+          # 仓库为 Public 时该参数可用；若为 Private 需 GitHub Pro。
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
