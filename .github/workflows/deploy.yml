@@ -36,9 +36,9 @@ jobs:
         env:
           GITHUB_PAGES: 'true'
           GITHUB_REPOSITORY: ${{ github.repository }}
-          # 配了自定义域名时改为 '/'（站点在根路径）
-          # 默认走子路径 /<仓库名>/，故留空
-          SITE_BASE: ${{ vars.SITE_BASE }}
+          # 已配置自定义域名 gaoyijun.site，站点在根路径
+          # 若改回 gyj1201.github.io/vllm-console 子路径部署，删掉这一行即可
+          SITE_BASE: '/'
 
       - name: Configure Pages
         uses: actions/configure-pages@v5
