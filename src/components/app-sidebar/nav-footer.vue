@@ -13,7 +13,7 @@ import { SidebarMenu, SidebarMenuButton, SidebarMenuItem } from '@/components/ui
           alt=""
           class="size-7 shrink-0 rounded-full object-cover ring-1 ring-border"
         />
-        <span class="font-semibold truncate">vLLM 控制台</span>
+        <span class="font-semibold truncate">青山控制台</span>
       </SidebarMenuButton>
     </SidebarMenuItem>
   </SidebarMenu>

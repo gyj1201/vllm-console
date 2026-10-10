@@ -1,8 +1,6 @@
 import {
-  CpuIcon,
   MonitorIcon,
   SlidersIcon,
-  TerminalIcon,
 } from '@lucide/vue'
 
 import type { NavGroup, NavItem } from '@/components/app-sidebar/types'
@@ -24,23 +22,27 @@ export const settingsNavItems: SidebarLink[] = [
 
 export const navData: NavGroup[] = [
   {
-    title: '推理配置',
+    title: '导航',
     items: [
-      { title: '模型参数解析', url: '/', icon: TerminalIcon },
-      { title: 'GPU 分析', url: '/gpu-analysis', icon: CpuIcon },
-      { title: '启动参数', url: '/serve-params', icon: SlidersIcon },
+      { title: '常用', url: '/nav' },
+    ],
+  },
+  {
+    title: 'vLLM 部署',
+    items: [
+      { title: '模型参数解析', url: '/' },
+      { title: 'GPU 分析', url: '/gpu-analysis' },
+      { title: '启动参数', url: '/serve-params' },
     ],
   },
   {
     title: 'vLLM 文档',
     items: [
       { title: '中文文档', url: 'https://docs.vllm.com.cn/' },
-      { title: '官方文档', url: 'https://docs.vllm.ai/en/latest/' },
-      { title: 'serve 参数', url: 'https://docs.vllm.ai/en/latest/cli/serve.html' },
     ],
   },
   {
-    title: '国内平台',
+    title: '国产芯片',
     items: [
       {
         title: '昇腾',

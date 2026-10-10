@@ -52,6 +52,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    '/nav': RouteRecordInfo<
+      '/nav',
+      '/nav',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     '/serve-params': RouteRecordInfo<
       '/serve-params',
       '/serve-params',
@@ -112,6 +119,14 @@ declare module 'vue-router/auto-routes' {
     'src/pages/gpu-analysis.vue': {
       routes:
         | '/gpu-analysis'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/nav.vue': {
+      routes:
+        | '/nav'
       views:
         | never
       pathParamNames:

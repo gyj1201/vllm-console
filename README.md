@@ -1,4 +1,4 @@
-# vLLM 控制台
+# 青山控制台
 
 从模型仓库的 `config.json` 解析出可直接使用的 `vllm serve` 启动命令。
 
