@@ -1,0 +1,10 @@
+# 统一换行符，避免 Windows 提交后 LF 被转成 CRLF 导致构建差异
+* text=auto eol=lf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary
